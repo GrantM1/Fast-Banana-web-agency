@@ -11,7 +11,20 @@ body {
 
 #nav ul {
  list-style-type: none;
+ display: none;
 }
+
+#nav ul li:last-of-type {
+ display: flex;
+ justify-content: space-between;
+ background: #2e282a;
+}
+
+#nav ul li:last-of-type a {
+ flex: 1 0 auto;
+ text-align-last: center;
+}
+
 
 #nav ul li a {
  text-decoration: none;
@@ -40,6 +53,12 @@ body {
  padding: 10px;
  font-size: 25px;
  cursor: pointer;
+}
+
+.new-nav {
+ position: fixed;
+ width: 100vw;
+ z-index: 10 !important;
 }
 
 @media screen and (min-width:776px) {
@@ -73,3 +92,85 @@ body {
   display: none;
  }
 }
+
+/* header  */
+header {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+#banner {
+ flex: 1 0 auto;
+ background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url(images/background-banner.jpg) center/cover fixed no-repeat;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.banner-text h1 {
+ text-transform: uppercase;
+ color: #ffc914;
+ font-size: 60px;
+ font-style: italic;
+ text-decoration: underline;
+}
+
+.banner-text h3 {
+ text-transform: capitalize;
+ font-size: 30px;
+ margin: 10px 0;
+ color: #d9e5d6;
+}
+
+
+.banner-text a {
+ display: inline-block;
+ margin: 10px;
+ text-transform: capitalize;
+ text-decoration: none;
+ padding: 10px;
+ font-size: 25px;
+ color: #ffc914;
+ border: 3px solid #ffc914;
+ background: transparent;
+ transition: color 0.5s ease, background 0.5s ease;
+}
+
+.banner-text a:hover {
+ color: #2e282a;
+ background: #ffc914;
+}
+
+/* icons section */
+#icon-section {
+ height: 70px;
+ background: #2e282a;
+ text-align: center;
+ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+ padding: 20px 0 40px 0;
+}
+
+#icon-section a {
+ display: inline-block;
+ padding: 5px 10px;
+ margin: 0 5px;
+ font-size: 30px;
+ color: #ffc914;
+ border-radius: 5px;
+ background: rgba(0, 0, 0, 0.8);
+ transition: transform 0.5s ease, color 0.5s ease;
+}
+
+#icon-section a:hover {
+ transform: translateY(-10px);
+ color: #d9e5d6;
+}
+
+
+
+/* end of icons section */
+
+/* end of header  */
