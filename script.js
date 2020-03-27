@@ -16,8 +16,8 @@ $(window).scroll(function () {
 
 $('nav a').click(function (link) {
  link.preventDefault();
- let traget = $(this).attr("href");
- $('html body').animate({
+ let target = $(this).attr("href");
+ $('html, body').animate({
   scrollTop: $(target).offset().top
  }, "slow");
 })
