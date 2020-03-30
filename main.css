@@ -208,7 +208,7 @@ header {
 
 /* end of title */
 #skills .title {
- margin-top: -40px;
+ margin-top: -20px;
 }
 
 .skills-center {
@@ -455,7 +455,9 @@ form {
  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 
-
+#about .title-subheading {
+ color: rgb(20, 20, 20);
+}
 
 
 #about-center {
@@ -479,9 +481,24 @@ form {
  margin: 40px 0;
 }
 
-.ui-accordion-header {}
+.ui-accordion-header {
+ padding: 20px !important;
+ text-align: center;
+ background: #ffc914 !important;
+ color: #00a7e1 !important;
+ text-transform: capitalize;
+ font-size: 20px !important;
+ margin: 5px !important;
+ border: 2px solid #00a7e1 !important;
+ border-radius: 10px !important;
+}
 
-.ui-accordion .ui-accordion-content {}
+.ui-accordion .ui-accordion-content {
+ background: #b5c2b7;
+ padding: 20px !important;
+ color: #f5f3f5;
+ border-radius: 10px;
+}
 
 @media screen and (min-width:776px) {
  #about-center {

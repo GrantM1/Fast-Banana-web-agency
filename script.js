@@ -21,3 +21,9 @@ $('nav a').click(function (link) {
   scrollTop: $(target).offset().top
  }, "slow");
 })
+
+$(function () {
+ $("#accordion").accordion({
+  animate: 500
+ });
+});
