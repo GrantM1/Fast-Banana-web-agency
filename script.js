@@ -27,3 +27,26 @@ $(function () {
   animate: 500
  });
 });
+
+// progress bars
+
+$(function () {
+ $("#p-bar-1").progressbar({
+  value: 37
+ });
+});
+$(function () {
+ $("#p-bar-2").progressbar({
+  value: 70
+ });
+});
+$(function () {
+ $("#p-bar-3").progressbar({
+  value: 60
+ });
+});
+$(function () {
+ $("#p-bar-4").progressbar({
+  value: 80
+ });
+});
